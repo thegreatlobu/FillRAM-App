@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTotalMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:text="Hello World!"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAvailableMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalMemory"
+        app:layout_constraintStart_toStartOf="@+id/txtTotalMemory"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalMemory" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:onClick="launchProcess"
+        android:text="Launch Process"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTxtProcessMemory"
+        app:layout_constraintStart_toEndOf="@+id/edtTxtProcessMemory"
+        app:layout_constraintTop_toTopOf="@+id/edtTxtProcessMemory"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:onClick="fillRAM"
+        android:text="Fill RAM"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTxtRAMMemory"
+        app:layout_constraintStart_toEndOf="@+id/edtTxtRAMMemory"
+        app:layout_constraintTop_toTopOf="@+id/edtTxtRAMMemory" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:onClick="freeRAM"
+        android:text="Free RAM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTxtRAMMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="316dp"
+        android:ems="10"
+        android:hint="Enter Memory in MB"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTxtProcessMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter Process Memory"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtRAMMemory" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

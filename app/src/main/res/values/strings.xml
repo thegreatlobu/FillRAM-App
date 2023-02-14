@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">syssim</string>
+    <string name="notification_title">Foreground Service</string>
+    <string name="notification_content">This is a foreground service</string>
+</resources>
